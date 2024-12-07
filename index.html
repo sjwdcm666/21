@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">我的主页</div>
+    </nav>
+
+    <!-- 个人介绍 -->
+    <section id="about" class="about-section">
+        <div class="profile-container">
+            <img src="images/image6.jpg" alt="个人头像" class="profile-image">
+            <div class="profile-text">
+                <h1>睡觉哇</h1>
+                <p>你好，我是睡觉哇，一位生活中深深热爱探索"休息艺术"的人。对于我来说，睡眠不仅是生理上的需求，更是精神和创意的源泉。每当夜幕降临，我便沉浸于深的梦乡，享受那片刻的宁静与放松。睡觉对我来说，既是充电的过程，也是发现内心自我的时刻。</p>
+                <p>我的生活哲学是："只有通过充分的休息，才能拥抱明天的挑战。" 我相信，良好的睡眠是保持创造力和高效工作的基础。我看来，每一场美梦的背后，都蕴藏着无限的能量和灵感。而正是在这样的充电时光中，我得以在清晨醒来时，拥有足够的活力去追求自己的梦想。</p>
+                <p>无论是午后的小憩，还是一夜安眠，我都力求在每一场睡眠中找到自我与世界的和谐。欢迎来到我的网站，了解更多关于如何通过睡眠提升生活质量的小秘诀，或许你也能和我一样，享受这份深沉而平静的美好。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片轮播 -->
+    <section id="gallery" class="carousel-section">
+        <div class="carousel">
+            <button class="carousel-button prev">&lt;</button>
+            <div class="carousel-container">
+                <img src="images/image1.jpg" alt="照片1" class="carousel-image active">
+                <img src="images/image2.jpg" alt="照片2" class="carousel-image">
+                <img src="images/image3.jpg" alt="照片3" class="carousel-image">
+                <img src="images/image4.jpg" alt="照片4" class="carousel-image">
+                <img src="images/image5.jpg" alt="照片5" class="carousel-image">
+            </div>
+            <button class="carousel-button next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- 聊天界面 -->
+    <section class="chat-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>睡觉哇</h2>
+                <button class="reset-btn">重置对话</button>
+            </div>
+            
+            <div class="messages-container">
+                <!-- 消息将在这里动态添加 -->
+            </div>
+            
+            <div class="input-container">
+                <textarea 
+                    class="message-input" 
+                    placeholder="请输入您的问题..."
+                    rows="1"
+                ></textarea>
+                <button class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体链接 -->
+    <footer class="social-links">
+        <a href="https://www.uic.edu.cn/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.uic.edu.cn/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.uic.edu.cn/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.uic.edu.cn/" target="_blank" class="social-icon"><i class="fab fa-weibo"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-encode@1.0.1/dist/jwt-encode.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
